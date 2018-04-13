@@ -39,6 +39,17 @@ int main() {
 		return 1;
 	}
 
+#ifdef DEBUG_MODE
+	printf("\n<JSON_STRING>\n");
+	printf("%s",JSON_STRING);
+	printf("\n==============\n");
+#endif
+
+#ifdef DEBUG_MODE
+	for(i=1;i<r;i++){
+		printf("[%2d] (%d) %d~%d, size : %d\n", i, t[i].type,t[i].start,t[i].end,t[i].size);
+#endif     
+
 	/* Loop over all keys of the root object */
 	for (i = 1; i < r; i++) {
 		if (jsoneq(JSON_STRING, &t[i], "user") == 0) {
