@@ -47,7 +47,7 @@ int main() {
 
 #ifdef DEBUG_MODE
 	for(i=1;i<r;i++){
-		printf("[%2d] (%d) %d~%d, size : %d\n", i, t[i].type,t[i].start,t[i].end,t[i].size);
+		printf("[%2d] (%d) %d~%d, size : %d\n", i, t[i].type,t[i].start,t[i].end,t[i].size);}
 #endif     
 
 	/* Loop over all keys of the root object */
